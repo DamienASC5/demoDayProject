@@ -1,0 +1,42 @@
+/* Background Image */
+body{
+    background:
+    linear-gradient(
+     rgba(155, 155,155, 0.5),
+    rgba(155, 155,155, 0.5)
+    ),
+    url("images/Background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Buttons */
+.button{
+    background-color: rgb(129, 233, 207);
+    padding: 5px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    display: flex;
+    align-content: space-between
+
+}
+
+#Question{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lusitana', serif;
+}
+.Text{
+    font-size: 30px;
+}
+
+/* Copyright */
+#Copyright{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Damion', cursive;
+}
