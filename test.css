@@ -1,6 +1,40 @@
+<<<<<<< HEAD
 h1{
      text-align:center;
     margin-top: 50px ;
    
       
+=======
+header{
+    font-size:30px;
+    text-align: center;
+
+}
+/* Buttons */
+ul{
+    background-color: rgb(129, 233, 207);
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#Question{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lusitana', serif;
+}
+.Text{
+    font-size: 30px;
+}
+
+/* Copyright */
+#Copyright{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Damion', cursive;
+>>>>>>> 9c730aa64f69981fc8060108f3f9b8e297dfa965
 }
