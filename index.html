@@ -8,15 +8,49 @@
     <link href="https://fonts.googleapis.com/css?family=Damion|Lusitana" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <style>
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+      }
+      
+      li {
+          float: left;
+      }
+      
+      li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+          background-color: #111;
+      }
+      
+      .active {
+          background-color: #4CAF50;
+      }
+      </style>
 </head>
 <body>
-  <button class="button">Home</button>
-  <button class="button">Take the Test</button>
-  <button class="button">Learn More</button>
+ 
+<header>FASFADITE</header>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="TakeTheTest.html">Take the Test</a></li>
+    <li><a href="FAQ.html">FAQ</a></li>
+    <li><a href="Breakdown.html">FAFSA Breakdown</a></li>
+  </ul>
   <div id="Question">What is the FAFSA?</div>
   <div class="Text">The FAFSA is free Federal Student Aid, that goes towards your tuition. The Free Application for Federal Student Aid (FAFSA) is a form that can be prepared annually by current and prospective college students (undergraduate and graduate) in the United States to determine their eligibility for student financial aid.</div>
   
-  <div id="Copyright">Damien & Jordy©</div>
+  <div id="Copyright">Damien, Amir & Jordy©</div>
   
 </body>
 </html>
