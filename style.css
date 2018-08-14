@@ -1,15 +1,14 @@
 /* Background Image */
 body{
+    position: relative;
+    
     background:
     linear-gradient(
-     rgba(155, 155,155, 0.5),
-    rgba(155, 155,155, 0.5)
-    ),
-    url("images/Background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+     rgba(40, 194, 61, 0.5),
+    rgba(40, 194,61, 0.5)
+    );
+    
+    height: 100vh;
 }
 
 header{
@@ -38,8 +37,12 @@ ul{
     font-size: 30px;
 }
 
-/* Copyright */
+
 #Copyright{
+    background: white;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
     text-align: center;
     font-size: 25px;
     font-family: 'Damion', cursive;

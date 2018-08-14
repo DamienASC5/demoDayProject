@@ -1,0 +1,42 @@
+
+body{
+    position: relative;
+    
+}
+header{
+    font-size:30px;
+    text-align: center;
+
+}
+/* Buttons */
+ul{
+    background-color: rgb(129, 233, 207);
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#Question{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lusitana', serif;
+}
+.Text{
+    font-size: 30px;
+}
+
+
+#Copyright{
+    background: white;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Damion', cursive;
+}
+
