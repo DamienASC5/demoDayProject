@@ -1,6 +1,7 @@
 /* Background Image */
 body{
     position: relative;
+    height: 100vh;
     
     background:
     linear-gradient(
@@ -35,6 +36,8 @@ ul{
 }
 .Text{
     font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
