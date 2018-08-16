@@ -3,41 +3,61 @@
     {
       question: "What does the FAFSA help you with?",
       answers: {
-        a: "Applying for Highscool",
-        b: "College",
-        c: "College Financial Help"
+        a: "Applying for Highschool",
+        b: "Finding a job after College",
+        c: "Financial Aid for College"
       },
       correctAnswer: "c"
     },
     {
-      question: "What is the best site ever created?",
+      question: "What item is not neccessary for filling out the FAFSA?",
       answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
+        a: "Social Security",
+        b: "ID",
+        c: "GPA",
+        d: "Bank Statements"
       },
       correctAnswer: "c"
     },
     {
       question: "What does EFC stand for?",
       answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "Expected Family Contribution",
+        b: "Electronic Fee Collection",
+        c: "Economic and Financial Committee",
+        d: "English For Commerce"
       },
-      correctAnswer: "d"
+      correctAnswer: "a"
+    },
+    {
+      question: "True or False: If your family makes alot of money, you don't have to fill out the FAFSA.",
+      answers: {
+        a: "True",
+        b: "False",
+        c: "It depends?"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "How often should you reapply for financial aid?",
+      answers: {
+        a: "Every term",
+        b: "Every other year",
+        c: "Annually",
+        d: "When I run out of money"
+      },
+      correctAnswer: "c"
     },
     {
       question: "What does SAR stand for?",
       answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "Stock Appreciation Right",
+        b: "Special Administrative Region",
+        c: "Suspicious Activity Report",
+        d: "Student Aid Report"
       },
       correctAnswer: "d"
-    }
+    },
   ];
 
   function buildQuiz() {
@@ -75,11 +95,11 @@
     quizContainer.innerHTML = output.join("");
   }
 
-  function showResults() {
+  function showResults(){
     // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll(".answers");
 
-    // keep track of user's answers
+    function RESULTZ(){
     let numCorrect = 0;
 
     // for each question...
@@ -103,8 +123,15 @@
       }
     });
 
+    document.querySelector("#submit").addEventListener("click", function(){
+      console.log('submit clicked')
+      for(let i=0 ; i<= myQuestions.length;i++){
+      
+    }
+    })
     // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
   }
 
   function showSlide(n) {
@@ -151,6 +178,13 @@
 
   // on submit, show results
   submitButton.addEventListener("click", showResults);
+
+
+
+
+
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();
+
+
