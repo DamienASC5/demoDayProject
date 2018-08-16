@@ -99,8 +99,7 @@
     // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll(".answers");
 
-    function RESULTZ(){
-    let numCorrect = 0;
+    
 
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
@@ -123,12 +122,12 @@
       }
     });
 
-    document.querySelector("#submit").addEventListener("click", function(){
-      console.log('submit clicked')
-      for(let i=0 ; i<= myQuestions.length;i++){
+    // document.querySelector("#submit").addEventListener("click", function(){
+    //   console.log('submit clicked')
+    //   for(let i=0 ; i<= myQuestions.length;i++){
       
-    }
-    })
+    // }
+    // })
     // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 
